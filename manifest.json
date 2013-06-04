@@ -1,0 +1,14 @@
+{
+  "name": "Landesk Note Filler",
+  "version": "2.0.0",
+  "manifest_version": 2,
+  "description": "Visual modifiers for my likings.",
+  "content_scripts": [
+	{
+		"matches": ["https://servicedesk.its.uq.edu.au/*"],
+		"css": ["jquery-ui.css", "notes.css"],
+		"js": ["jquery-1.9.1.min.js", "jquery-ui-1.10.3.custom.min.js", "expand_note.js"]
+	}],	
+  "permissions": [
+	"clipboardRead"]
+}
